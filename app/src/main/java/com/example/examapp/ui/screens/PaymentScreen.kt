@@ -61,7 +61,7 @@ fun PaymentScreen(
             .padding(16.dp)
     ) {
 
-        // 🔙 Back arrow
+
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.fillMaxWidth()
@@ -182,7 +182,7 @@ fun PaymentScreen(
             Card(
                 elevation = 8.dp,
                 modifier = Modifier
-                    .fillMaxWidth(0.95f)     // 👉 encore plus large
+                    .fillMaxWidth(0.95f)
                     .wrapContentHeight()
                     .padding(12.dp)
             ) {

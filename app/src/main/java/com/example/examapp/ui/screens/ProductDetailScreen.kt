@@ -47,7 +47,7 @@ fun ProductDetailScreen(
                 .statusBarsPadding()
                 .padding(16.dp)
                 .padding(padding)
-                .verticalScroll(rememberScrollState())   // 👈 Rend la page scrollable
+                .verticalScroll(rememberScrollState())
         ) {
 
             Row(verticalAlignment = Alignment.CenterVertically) {

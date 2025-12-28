@@ -1,4 +1,3 @@
-// MainActivity.kt
 package com.example.examapp
 
 import android.annotation.SuppressLint

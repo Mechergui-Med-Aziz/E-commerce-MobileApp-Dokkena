@@ -13,7 +13,7 @@ object RetrofitInstance {
 
     private val retrofit = Retrofit.Builder()
         .baseUrl("https://fakestoreapi.com/")
-        .addConverterFactory(MoshiConverterFactory.create(moshi)) // ✅ ici
+        .addConverterFactory(MoshiConverterFactory.create(moshi))
         .build()
 
     val api: ProductApi by lazy {

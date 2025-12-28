@@ -100,7 +100,7 @@ fun CartScreen(
                     }
                 }
 
-                // BOUTON PAY
+
                 Button(
                     onClick = { navController.navigate("payment") },
                     modifier = Modifier
@@ -114,7 +114,7 @@ fun CartScreen(
                     )
                 }
 
-                // ⭐ NOTICE LIVRAISON GRATUITE
+
                 Text(
                     text = "🚚 Free delivery on all orders !",
                     modifier = Modifier

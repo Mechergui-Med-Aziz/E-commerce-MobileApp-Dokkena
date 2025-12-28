@@ -25,11 +25,11 @@ import com.example.examapp.R
 
 @Composable
 fun WelcomeScreen(navController: NavController) {
-    // Définir un dégradé de couleurs pour le fond
+
     val gradientBackground = Brush.verticalGradient(
         colors = listOf(
-            Color(0xFF6A11CB), // Violet
-            Color(0xFF2575FC)  // Bleu
+            Color(0xFF6A11CB),
+            Color(0xFF2575FC)
         )
     )
 
@@ -45,7 +45,7 @@ fun WelcomeScreen(navController: NavController) {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Carte contenant le contenu principal
+
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -65,7 +65,7 @@ fun WelcomeScreen(navController: NavController) {
                         .padding(vertical = 40.dp, horizontal = 24.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    // Icône de shopping avec effet
+
                     Box(
                         modifier = Modifier
                             .size(120.dp)
@@ -87,7 +87,7 @@ fun WelcomeScreen(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(32.dp))
 
-                    // Titre principal
+
                     Text(
                         text = "Welcome to",
                         fontSize = 28.sp,
@@ -105,7 +105,7 @@ fun WelcomeScreen(navController: NavController) {
                         modifier = Modifier.padding(bottom = 8.dp)
                     )
 
-                    // Sous-titre
+
                     Text(
                         text = "🛍️ Discover amazing products & exclusive deals",
                         fontSize = 16.sp,
@@ -117,7 +117,7 @@ fun WelcomeScreen(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(40.dp))
 
-                    // Bouton avec dégradé
+
                     Button(
                         onClick = { navController.navigate("home") },
                         modifier = Modifier
@@ -155,7 +155,7 @@ fun WelcomeScreen(navController: NavController) {
                                 )
                                 Spacer(modifier = Modifier.width(8.dp))
                                 Icon(
-                                    painter = painterResource(id = R.drawable.ic_arrow_right), // Créez cette ressource
+                                    painter = painterResource(id = R.drawable.ic_arrow_right),
                                     contentDescription = "Arrow Right",
                                     tint = Color.White,
                                     modifier = Modifier.size(20.dp)
@@ -166,7 +166,7 @@ fun WelcomeScreen(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Texte informatif
+
                     Text(
                         text = "Dozens of products waiting for you",
                         fontSize = 14.sp,
@@ -176,13 +176,13 @@ fun WelcomeScreen(navController: NavController) {
                 }
             }
 
-            // Texte en bas
+
 
         }
     }
 }
 
-// Version alternative avec image de fond (si vous avez une image)
+
 @Composable
 fun WelcomeScreenWithBackground(navController: NavController) {
     Box(
@@ -191,8 +191,6 @@ fun WelcomeScreenWithBackground(navController: NavController) {
     ) {
 
 
-
-        // Overlay pour améliorer la lisibilité
         Box(
             modifier = Modifier
                 .fillMaxSize()
@@ -213,8 +211,7 @@ fun WelcomeScreenWithBackground(navController: NavController) {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Le même contenu que ci-dessus
-            // ...
+
         }
     }
 }

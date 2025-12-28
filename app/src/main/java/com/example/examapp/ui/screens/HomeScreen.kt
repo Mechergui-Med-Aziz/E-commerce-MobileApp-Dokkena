@@ -68,7 +68,7 @@ fun HomeScreen(viewModel: ProductViewModel, navController: NavController) {
                 .padding(padding)
         ) {
 
-            // 🔍 BARRE DE RECHERCHE (padding réduit)
+
             OutlinedTextField(
                 value = search,
                 onValueChange = { search = it },
@@ -85,7 +85,7 @@ fun HomeScreen(viewModel: ProductViewModel, navController: NavController) {
                 it.title.contains(search, ignoreCase = true)
             }
 
-            // LISTE PRODUITS
+
             LazyColumn(
                 modifier = Modifier
                     .weight(1f)
@@ -109,7 +109,7 @@ fun HomeScreen(viewModel: ProductViewModel, navController: NavController) {
                 }
             }
 
-            // BARRE DU BAS
+
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
